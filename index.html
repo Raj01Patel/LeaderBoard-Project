@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="main_title">LeaderBoard</h1>
+    <form class="main_form">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Country" >
+        <input type="number" placeholder="Player Score">
+        <button class="submit-btn">Add Player</button>
+    </form>
+
+    <p class="main_error-prompter">All fields are required</p>
+
+    <div class="main_scoreboard-wrapper">
+        <div class="main_scoreboard">
+            <div class="name-time">
+                <p class="player-name">Rohit Sharma</p>
+                <p class="time">Mar 2024 14:53</p>
+            </div>
+            <p class="country">India</p>
+            <p class="score">85</p>
+            <div class="main_scoreboard_btn">
+                <button style="font-size: 22px;">&#x1f5d1</button>
+                <button>+5</button>
+                <button>-5</button>
+            </div>
+        </div>
+        <div class="main_scoreboard">
+            <div class="name-time width">
+                <p class="player-name">Virat Kohli</p>
+                <p class="time">Mar 2024 15:00</p>
+            </div>
+            <p class="country">India</p>
+            <p class="score">100</p>
+            <div class="main_scoreboard_btn">
+                <button>&#x1f5d1</button>
+                <button>+5</button>
+                <button>-5</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

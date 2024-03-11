@@ -81,19 +81,19 @@ function sortScoreBoard() {
             if (numA < numB) return 1;
         });
 
-    sortedElements.forEach((el) => {
-        scoreboardContainer.append(el);
-    })
+    sortedElements.forEach((el) =>
+        scoreboardContainer.append(el)
+    )
 }
 
-function generateDateAndTime(){
+function generateDateAndTime() {
     let dateObject = new Date();
     // console.log(dateObject);
-    let month = dateObject.toLocaleString("default", {month:"long"})
+    let month = dateObject.toLocaleString("default", { month: "long" })
     // console.log(month);
     day = dateObject.getDate(),
-    year = dateObject.getFullYear(),
-    time = dateObject.toLocaleTimeString().slice(0,8);
+        year = dateObject.getFullYear(),
+        time = dateObject.toLocaleTimeString().slice(0, 8);
     // console.log(time);
 
     let generateResult = `${month} ${day}: ${year} ${time}`

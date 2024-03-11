@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    background-color: rgba(255, 255, 255, 0.196);
 }
 
 .main_title {
@@ -112,10 +113,13 @@ button:active {
 }
 
 .main_scoreboard_btn button {
-    font-size: 18px;
+    font-size: 20px;
     padding: 3px;
     margin: 0px 10px;
-    background: transparent;
-    border: none;
+    width: 35px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    border: 1px solid black;
     cursor: pointer;
 }
+
